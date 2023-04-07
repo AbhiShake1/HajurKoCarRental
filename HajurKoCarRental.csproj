@@ -20,7 +20,6 @@
     <Folder Include="Lib\Extensions\" />
     <Folder Include="Lib\Features\" />
     <Folder Include="Lib\Helper\" />
-    <Folder Include="Lib\Routing\" />
     <Folder Include="Lib\Shared\" />
     <Folder Include="Lib\Utils\" />
   </ItemGroup>
