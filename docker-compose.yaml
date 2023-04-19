@@ -1,24 +1,23 @@
 version: '3.9'
-
 services:
   db:
-    image: surrealdb/surrealdb
+    image: 'surrealdb/surrealdb:latest'
+    environment:
+      - SURREAL_DATABASE=/data/db
+      - SURREAL_PASSWORD=password
+    volumes:
+      - 'surreal_data:/data/db'
     ports:
       - '5432:5432'
-    environment:
-      POSTGRES_USER: 'postgres'
-      POSTGRES_PASSWORD: 'rental'
-      POSTGRES_DB: 'rental'
-    volumes:
-      - db-data:/var/lib/surrealdb/data
-    restart: always
   app:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - '80:80'
+      - '5000:80'
     depends_on:
       - db
+    environment:
+      - ConnectionStrings:DefaultConnection=SurrealDBServer=db;SurrealDBPort=5432;SurrealDBUser=surreal;SurrealDBPassword=password;SurrealDBDatabase=HajurKoCarRental;SurrealDBNamespace=my-namespace
 volumes:
-  db-data:
+  surreal_data:
