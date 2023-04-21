@@ -1,30 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "/home/abhishek/dotnet/HajurKoCarRental/HajurKoCarRental.csproj": {}
+    "C:\\Users\\user\\OneDrive\\Desktop\\HajurKoCarRental\\HajurKoCarRental.csproj": {}
   },
   "projects": {
-    "/home/abhishek/dotnet/HajurKoCarRental/HajurKoCarRental.csproj": {
+    "C:\\Users\\user\\OneDrive\\Desktop\\HajurKoCarRental\\HajurKoCarRental.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/abhishek/dotnet/HajurKoCarRental/HajurKoCarRental.csproj",
+        "projectUniqueName": "C:\\Users\\user\\OneDrive\\Desktop\\HajurKoCarRental\\HajurKoCarRental.csproj",
         "projectName": "HajurKoCarRental",
-        "projectPath": "/home/abhishek/dotnet/HajurKoCarRental/HajurKoCarRental.csproj",
-        "packagesPath": "/home/abhishek/.nuget/packages/",
-        "outputPath": "/home/abhishek/dotnet/HajurKoCarRental/obj/",
+        "projectPath": "C:\\Users\\user\\OneDrive\\Desktop\\HajurKoCarRental\\HajurKoCarRental.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\OneDrive\\Desktop\\HajurKoCarRental\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/abhishek/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -35,20 +42,32 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.0-preview.2.23128.3, )"
+              "version": "[7.0.1, )"
             },
-            "Microsoft.OpenApi": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[1.6.4-preview1, )"
+              "version": "[7.0.1, )"
             },
-            "Swagger": {
+            "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[1.0.0, )"
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[6.2.2, )"
             }
           },
           "imports": [
@@ -57,7 +76,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -69,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
